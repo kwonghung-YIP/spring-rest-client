@@ -3,6 +3,6 @@ spring:
     web-application-type: none
     
 server:  ssl:
-    trust-store-type: pkcs12    trust-store: file:C:/Users/kwong/Documents/certs/selfsigned/ca/trust.p12
+    trust-store-type: jks    trust-store: file:C:/Users/kwong/Documents/certs/selfsigned/ca/trust.jks
     trust-store-password: abcd1234
      
