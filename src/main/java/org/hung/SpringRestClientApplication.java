@@ -57,7 +57,8 @@ public class SpringRestClientApplication {
 					log.error("{}",e);
 				}
 				
-				SSLConnectionSocketFactory socketFactory = new SSLConnectionSocketFactory(sslContext,NoopHostnameVerifier.INSTANCE);
+				//SSLConnectionSocketFactory socketFactory = new SSLConnectionSocketFactory(sslContext,NoopHostnameVerifier.INSTANCE);
+				SSLConnectionSocketFactory socketFactory = new SSLConnectionSocketFactory(sslContext,null); //Use default hostname verifier
 				
 				HttpClient httpClient = HttpClientBuilder.create()
 						.setSSLSocketFactory(socketFactory)
